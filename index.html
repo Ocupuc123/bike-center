@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon" />
+    <title>Bike Center</title>
+    <!-- <link rel="preload" href="/fonts/open-sans-v35-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="/fonts/open-sans-v35-cyrillic_latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <!-- <link rel="preload" href="/fonts/open-sans-v35-cyrillic_latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+  </head>
+
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="container">
+          <div class="page-header__top-inner">
+            <div class="page-header__city-selection">
+              <div class="page-header__city-selection-icon">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.0843 1L5.53809 6.5" stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M11.084 1L7.55462 11L5.53782 6.5L1 4.5L11.084 1Z" stroke="#E0E0E0" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <a class="page-header__city-selection-link" href="#">Архангельск-на-под</a>
+            </div>
+            <div class="page-header__address"><a class="page-header__address-link" href="#">ул. Дорожная, 1Е и еще 3</a></div>
+            <div class="page-header__phones">
+              <a class="page-header__phones-link" href="tel:88005000320">8 800 500-03-20</a><a class="page-header__phones-link" href="tel:88612000320">8 861 200-03-20</a>
+            </div>
+            <div class="page-header__service-links">
+              <a class="page-header__service-links-link" href="#">Ремонт и обслуживание</a><a class="page-header__service-links-link" href="#">Прокат оборудования</a>
+            </div>
+            <div class="page-header__top-menu">
+              <ul class="page-header__top-menu-list">
+                <li class="page-header__top-menu-item"><a class="page-header__top-menu-link" href="#">О нас</a></li>
+                <li class="page-header__top-menu-item"><a class="page-header__top-menu-link" href="#">Доставка</a></li>
+                <li class="page-header__top-menu-item"><a class="page-header__top-menu-link" href="#">Оплата</a></li>
+                <li class="page-header__top-menu-item"><a class="page-header__top-menu-link" href="#">Вакансии</a></li>
+                <li class="page-header__top-menu-item"><a class="page-header__top-menu-link" href="#">Помощь</a></li>
+                <li class="page-header__top-menu-item"><a class="page-header__top-menu-link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-header__main page-header__main--js">
+        <div class="container">
+          <div class="page-header__main-top">
+            <div class="page-header__logo">
+              <a class="logo" href="#"
+                ><svg width="195" height="40" viewBox="0 0 195 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    class="logo__path"
+                    d="M74.512 9.72729H55.2952L53.2009 31.193L72.3782 31.2061L72.9841 25.3174H61.4329L62.3944 15.5768H66.2668L63.514 23.411L71.1928 23.4372L73.9324 15.616L74.512 9.72729Z"
+                  />
+                  <path
+                    class="logo__path"
+                    d="M31.8861 31.2193L34.3623 5.79731L32.4261 5.78426L32.9793 0H42.647L40.9084 17.627L45.5052 9.72747L53.2235 9.71442L48.5214 17.5486L52.4464 17.5225L50.3127 39.0666H42.6207L44.1749 23.4373H40.2235L39.4859 31.2193H31.8861Z"
+                  />
+                  <path class="logo__path" d="M22.0757 31.2191L29.7545 31.193L31.8882 9.72729H24.2094L22.0757 31.2191Z" />
+                  <path
+                    class="logo__path"
+                    d="M0.804321 31.2193L3.28051 5.79732L1.29166 5.78426L1.85802 0H11.552L9.03634 25.3828H12.8823L13.8438 15.6162H11.9208L12.474 9.71442H22.089L19.9816 31.2193H0.804321Z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.632219 32.4466L41.2128 32.5249L40.6201 39.2493L0 39.1709L0.632219 32.4335V32.4466ZM195 9.93627H175.757L173.649 31.4412H181.289L182.856 15.7728H186.689L186.307 19.6899H194.025L195 9.85793V9.93627ZM173.663 9.93627L173.083 15.825L170.33 23.6592H162.665L165.417 15.825H161.545L160.584 25.5655H172.135L171.529 31.4542H152.352L154.446 10.0016L173.663 9.93627ZM138.693 31.4412H150.231L150.771 25.5786H146.925L147.887 15.8119H151.838L152.404 9.94933H148.453L148.822 6.03223H141.13L138.693 31.4412ZM138.693 9.9885L136.612 31.4673H128.946L130.474 15.7989H126.602L125.127 31.4673H117.514L119.555 9.9885H138.693ZM117.421 9.9885H98.231L96.1499 31.4412H115.327L115.907 25.5786H104.369L105.37 15.838H109.242L106.489 23.6723H114.168L116.921 15.838L117.501 9.94933L117.421 9.9885ZM96.1499 9.9885L95.3729 17.7444H87.6018L87.7994 15.8511H83.9797L82.9787 25.5786H86.8247L87.0355 23.607H94.767L93.9635 31.4412H74.7467L76.8804 9.9885H96.1499Z"
+                    fill="#E30613"
+                  /></svg
+              ></a>
+            </div>
+            <div class="page-header__catalog-button">
+              <button class="button button--theme-main" type="button">
+                <span class="page-header__catalog-button-burger"><span class="page-header__catalog-button-burger-line"></span></span><span class="page-header__catalog-button-text">Каталог</span>
+              </button>
+            </div>
+            <div class="page-header__search">
+              <form class="site-search">
+                <div class="site-search__wrapper">
+                  <label class="field-text"
+                    ><span class="field-text__input-wrap"><input class="field-text__input" type="text" name="search" placeholder="Поиск на сайте" /></span></label
+                  ><button class="button" type="submit">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.99996 14.9999C11.8659 14.9999 14.9999 11.8659 14.9999 7.99996C14.9999 4.13399 11.8659 1 7.99996 1C4.13399 1 1 4.13399 1 7.99996C1 11.8659 4.13399 14.9999 7.99996 14.9999Z"
+                        stroke="#333333"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path d="M12.9492 12.95L16.9992 17" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg
+                    ><span class="visually-hidden">Поиск</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="page-header__user-links">
+              <ul class="page-header__user-links-list">
+                <li class="page-header__user-links-item page-header__user-links-item--enter">
+                  <a class="page-header__user-links-link" href="#"
+                    ><span class="page-header__user-links-icon"
+                      ><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.41394 9.74239C9.82808 9.74239 11.7851 7.78534 11.7851 5.3712C11.7851 2.95705 9.82808 1 7.41394 1C4.99979 1 3.04274 2.95705 3.04274 5.3712C3.04274 7.78534 4.99979 9.74239 7.41394 9.74239Z"
+                          stroke="#333333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M0.787109 13.566C1.45888 12.4032 2.42481 11.4377 3.58787 10.7664C4.75093 10.0952 6.07016 9.74181 7.41303 9.74182C8.7559 9.74184 10.0751 10.0952 11.2382 10.7665C12.4012 11.4378 13.3671 12.4033 14.0389 13.5661"
+                          stroke="#333333"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    ><span class="page-header__user-links-text">Вход</span></a
+                  >
+                </li>
+                <li class="page-header__user-links-item page-header__user-links-item--order">
+                  <a class="page-header__user-links-link" href="#"
+                    ><span class="page-header__user-links-icon"
+                      ><svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2057 7.63211L5.06934 2.97925" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M17.2727 13.5492V6.3772C17.2724 6.06277 17.1887 5.75395 17.03 5.48173C16.8713 5.20951 16.6433 4.98345 16.3687 4.82624L10.0404 1.24022C9.76553 1.08285 9.45374 1 9.13635 1C8.81897 1 8.50718 1.08285 8.23232 1.24022L1.90404 4.82624C1.62945 4.98345 1.40138 5.20951 1.2427 5.48173C1.08402 5.75395 1.00033 6.06277 1 6.3772V13.5492C1.00033 13.8637 1.08402 14.1725 1.2427 14.4447C1.40138 14.7169 1.62945 14.943 1.90404 15.1002L8.23232 18.6862C8.50718 18.8436 8.81897 18.9264 9.13635 18.9264C9.45374 18.9264 9.76553 18.8436 10.0404 18.6862L16.3687 15.1002C16.6433 14.943 16.8713 14.7169 17.03 14.4447C17.1887 14.1725 17.2724 13.8637 17.2727 13.5492Z"
+                          stroke="#0C1111"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path d="M1.24414 5.44495L9.1364 9.9723L17.0287 5.44495" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9.13574 18.9999V9.96313" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" /></svg></span
+                    ><span class="page-header__user-links-text">Заказы</span></a
+                  >
+                </li>
+                <li class="page-header__user-links-item page-header__user-links-item--comparison">
+                  <a class="page-header__user-links-link" href="#"
+                    ><span class="page-header__user-links-icon"
+                      ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 17L1 17" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 17L3 5L6 5" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7 1L7 17L12 17L12 1L7 1Z" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 8L16 8L16 17" stroke="#0C1111" stroke-linecap="round" stroke-linejoin="round" /></svg></span
+                    ><span class="page-header__user-links-text">Сравнение</span></a
+                  >
+                </li>
+                <li class="page-header__user-links-item page-header__user-links-item--wishlist">
+                  <a class="page-header__user-links-link" href="#"
+                    ><span class="page-header__user-links-icon"
+                      ><svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11.0703 16.7848L18.5119 9.34322C20.3404 7.51475 20.6102 4.50664 18.8798 2.58506C18.4464 2.10234 17.9192 1.713 17.3303 1.44077C16.7414 1.16855 16.1033 1.01917 15.4548 1.00173C14.8062 0.984287 14.161 1.09916 13.5583 1.33934C12.9557 1.57952 12.4083 1.93997 11.9495 2.39869L10.5508 3.79738L9.34322 2.58975C7.51476 0.761279 4.50664 0.491516 2.58506 2.22187C2.10234 2.6553 1.713 3.18253 1.44077 3.7714C1.16855 4.36027 1.01917 4.99843 1.00173 5.64694C0.984287 6.29545 1.09916 6.94072 1.33934 7.54337C1.57952 8.14602 1.93997 8.69341 2.39869 9.15216L10.0313 16.7848C10.1691 16.9226 10.356 17 10.5508 17C10.7457 17 10.9326 16.9226 11.0703 16.7848V16.7848Z"
+                          stroke="#0C1111"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    ><span class="page-header__user-links-text">Избранное</span></a
+                  >
+                </li>
+                <li class="page-header__user-links-item page-header__user-links-item--cart">
+                  <a class="page-header__user-links-link" href="#"
+                    ><span class="page-header__user-links-icon"
+                      ><svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.00474 18.9999C8.55748 18.9999 9.00557 18.5555 9.00557 18.0074C9.00557 17.4592 8.55748 17.0149 8.00474 17.0149C7.45199 17.0149 7.00391 17.4592 7.00391 18.0074C7.00391 18.5555 7.45199 18.9999 8.00474 18.9999Z"
+                          stroke="#0C1111"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M17.0145 19C17.5672 19 18.0153 18.5556 18.0153 18.0075C18.0153 17.4594 17.5672 17.015 17.0145 17.015C16.4618 17.015 16.0137 17.4594 16.0137 18.0075C16.0137 18.5556 16.4618 19 17.0145 19Z"
+                          stroke="#0C1111"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M1 1H4.45741L6.77388 12.4772C6.85292 12.8719 7.06941 13.2264 7.38545 13.4787C7.70149 13.7309 8.09695 13.865 8.50259 13.8573H16.9041C17.3097 13.865 17.7052 13.7309 18.0212 13.4787C18.3373 13.2264 18.5538 12.8719 18.6328 12.4772L20.0158 5.28575H5.32177"
+                          stroke="#0C1111"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        /></svg></span
+                    ><span class="page-header__user-links-text">Корзина</span><span class="page-header__user-links-count">1</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-header__main-bottom">
+            <div class="page-header__catalog-links">
+              <ul class="page-header__catalog-links-list">
+                <li class="page-header__catalog-links-item"><a class="page-header__catalog-links-link" href="#">Горные Велосипеды</a></li>
+                <li class="page-header__catalog-links-item page-header__catalog-links-item--active"><a class="page-header__catalog-links-link" href="#">Детские Велосипеды</a></li>
+                <li class="page-header__catalog-links-item"><a class="page-header__catalog-links-link" href="#">Детские Самокаты</a></li>
+                <li class="page-header__catalog-links-item"><a class="page-header__catalog-links-link" href="#">Электросамокаты</a></li>
+              </ul>
+            </div>
+            <div class="page-header__catalog-additional-links">
+              <div class="page-header__catalog-additional-links-list">
+                <a class="page-header__catalog-additional-links-link page-header__catalog-additional-links-link--active" href="#">распродажа</a
+                ><a class="page-header__catalog-additional-links-link" href="#">бренды</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content">
+        <div class="container">
+          <ol class="breadcrumbs" aria-label="Breadcrumb" role="navigation">
+            <li class="breadcrumbs__item"><a href="#">Главная страница</a></li>
+            <li class="breadcrumbs__item"><span>Помощь</span></li>
+          </ol>
+          <div class="content__head">
+            <h1 class="content__title">Помощь</h1>
+            <div class="content__hotline-phone">
+              <div class="content__hotline-phone-text">Телефон горячей линии</div>
+              <a class="content__hotline-phone-link" href="tel:88005003020">8 (800) 500-30-20</a>
+            </div>
+          </div>
+          <div class="help-list">
+            <div class="help-list__inner">
+              <div class="help-list__item help-list__item--happy-help">
+                <img class="help-list__item-image" src="./images/help-list-img-1.png" alt="" role="presentation" />
+                <div class="help-list__item-body">
+                  <div class="help-list__item-title">Мы всегда рады помочь</div>
+                  <div class="help-list__item-description">Если у вас есть нерешенный вопрос</div>
+                  <div class="help-list__action"><a class="button button--theme-main" href="#">Напишите нам в чат</a></div>
+                </div>
+              </div>
+              <div class="help-list__item help-list__item--payment">
+                <img class="help-list__item-image" src="./images/help-list-img-2.png" alt="" role="presentation" />
+                <div class="help-list__item-body">
+                  <div class="help-list__item-title">Оплата</div>
+                  <div class="help-list__item-links">
+                    <ul class="help-list__item-links-list">
+                      <li class="help-list__item-links-item"><a class="help-list__item-links-link" href="#">Как оплатить заказ</a></li>
+                      <li class="help-list__item-links-item"><a class="help-list__item-links-link" href="#">Наложенный платёж</a></li>
+                      <li class="help-list__item-links-item"><a class="help-list__item-links-link" href="#">Оплата электронными деньгами</a></li>
+                      <li class="help-list__item-links-item"><a class="help-list__item-links-link" href="#">Как оплатить если нет карты</a></li>
+                      <li class="help-list__item-links-item"><a class="help-list__item-links-link" href="#">Подарочные карты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="help-list__item help-list__item--bonus">
+                <img class="help-list__item-image" src="./images/help-list-img-3.png" alt="" role="presentation" />
+                <div class="help-list__item-body">
+                  <div class="help-list__item-title">Бонусная система</div>
+                  <div class="help-list__item-description">
+                    <ul>
+                      <li>Покупай.</li>
+                      <li>Управляй заказами.</li>
+                      <li>Накапливай cashback—бонусы</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="help-list__item help-list__item--guarantee">
+                <div class="help-list__item-body">
+                  <div class="help-list__item-body-text-wrapper">
+                    <div class="help-list__item-title">Гарантия</div>
+                    <div class="help-list__item-description">Информацию по всем вопросам гарантии можно узнать тут.</div>
+                  </div>
+                  <div class="help-list__action"><a class="button button--theme-main" href="#">Гарантийные талоны</a></div>
+                </div>
+              </div>
+              <div class="help-list__item help-list__item--easy-return">
+                <img class="help-list__item-image" src="./images/help-list-img-4.png" alt="" role="presentation" />
+                <div class="help-list__item-body">
+                  <div class="help-list__item-title">Легкий возврат</div>
+                  <div class="help-list__item-description">Вернуть товары легко и удобно, если сохранён его товарный вид и потребительские свойства.</div>
+                  <div class="help-list__action"><a class="button button--theme-main" href="#">Узнать подробнее</a></div>
+                </div>
+              </div>
+              <div class="help-list__item help-list__item--delivery">
+                <img class="help-list__item-image" src="./images/help-list-img-5.png" alt="" role="presentation" />
+                <div class="help-list__item-body">
+                  <div class="help-list__item-title">Доставка</div>
+                  <div class="help-list__item-body-text-wrapper">
+                    <div class="help-list__item-description">Стоимость доставки будет зависеть от города в котором вы находитесь</div>
+                    <div class="help-list__action"><a class="button button--theme-main" href="#">Расчитать доставку</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__article">
+            <div class="content__article-block">
+              <div class="h2">Как сделать заказ</div>
+              <p>Мы делаем все возможное, чтобы максимально облегчить вам оформление заказа. Для того, чтобы сделать это:</p>
+              <ul>
+                <li>Перейдите в раздел <a href="#">«Каталог»</a>;</li>
+                <li>под понравившимся вам товаром нажать на зеленую кнопку «Купить»: это отправляет ваш заказ в виртуальную корзину;</li>
+                <li>переходите в корзину и оформляете заказ;</li>
+                <li>система автоматически зарегистрирует вас;</li>
+                <li>ожидайте смс и email уведомления о статусе вашего заказа. При возникновении вопросов будем рады помочь по телефону <a href="tel:88005000320">8(800)500-03-20</a>.</li>
+              </ul>
+            </div>
+            <div class="content__article-block">
+              <div class="h2">Легкий возврат</div>
+              <div class="easy-return-mobile">
+                <img class="easy-return-mobile__image" src="./images/help-list-img-4.png" alt="" role="presentation" />
+                <div class="easy-return-mobile__text">
+                  <p>Мы в «Байк Центре» понимаем это, и с радостью сделаем вам обмен на понравившийся вам товар или вернём деньги.</p>
+                </div>
+                <div class="easy-return-mobile__list">
+                  <ul>
+                    <li>Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк возврата и вышлем его вам на электронную почту;</li>
+                    <li>распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами пункте выдачи ;</li>
+                    <li>надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное перемещение товара внутри упаковки;</li>
+                    <li>сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте выдачи заказов или магазине;</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="visible-only-desktop">
+                <p>
+                  Покупайте, пробуйте, вам понравится, если нет, мы вернем вам деньги! Без вопросов, заявлений и дополнительных комиссий. <br />Вы вправе передумать. Мы в «Байк Центре» понимаем это, и
+                  с радостью сделаем вам обмен на понравившийся вам товар или вернём деньги.
+                </p>
+                <ul>
+                  <li>Свяжитесь с нами по телефону или онлайн-чаты. Мы оформим вам бланк возврата и вышлем его вам на электронную почту;</li>
+                  <li>распечатайте и заполните бланк, его нужно будет сдать вместе с заказом на указанном нами пункте выдачи ;</li>
+                  <li>надёжно упакуйте товар в коробку, предотвращая трение изделий между собой и свободное перемещение товара внутри упаковки;</li>
+                  <li>сдайте заказ в том же месте, где получали его или другом удобном вам партнёрском пункте выдачи заказов или магазине;</li>
+                </ul>
+              </div>
+            </div>
+            <div class="content__article-block">
+              <div class="guarantee-mobile">
+                <div class="h2">Гарантия</div>
+                <p>
+                  Информацию по всем вопросам, связанным с обменом, возвратом, ремонтом и взаимодействием с сервисным центром, вы можете уточнить непосредственно у сотрудников магазина или по телефону
+                  горячей линии.
+                </p>
+                <a class="button button--theme-main" href="#">Гарантийные талоны</a>
+              </div>
+              <div class="visible-only-desktop">
+                <p>Возврат и обмен товара производится на основании Закона РФ "О защите прав потребителей" и регулируется ст. 18, 19, 20, 21.</p>
+                <p>В случае доставки на дом и возникновения гарантийного случая/наличия брака у товара, мы самостоятельно и за свой счёт заберём от вас данный товар.</p>
+              </div>
+            </div>
+            <div class="content__article-block">
+              <div class="h2">Обратная связь</div>
+              <p>Если у вас есть предложения или замечания по работе интернет-магазина «Байк Центр», то вы всегда можете обратиться к нам:</p>
+              <ul>
+                <li>в социальной сети <a href="#">ВКонтакте</a>;</li>
+                <li>по электронной почте руководителю интернет-магазина <a href="mailto:info@bike-centre.ru">info@bike-centre.ru</a>;</li>
+                <li>написав <a href="#">отзыв</a> о работе «Байк Центра».</li>
+              </ul>
+            </div>
+            <div class="content__article-block content__article-block--margin-top">
+              <div class="h3">Не нашли то что нужно?</div>
+              <p>Позвоните нам по номеру <a href="tel:8800000000000">8 (800) 000000000</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__desktop">
+        <div class="container">
+          <div class="page-footer__desktop-inner">
+            <div class="page-footer__menu-and-subscribe">
+              <div class="page-footer__menu-wrapper">
+                <div class="page-footer__column">
+                  <div class="page-footer__uptitle">Помощь</div>
+                  <div class="page-footer__menu">
+                    <ul class="page-footer__menu-list">
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Как оплатить?</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Как получить?</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Пользовательское соглашение</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Бонусная программа</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="page-footer__column">
+                  <div class="page-footer__uptitle">Онас</div>
+                  <div class="page-footer__menu">
+                    <ul class="page-footer__menu-list">
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Ремонт и облуживание</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Прокат оборудования</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Наша история</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Мероприятия от Байк Центра</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Арендодателям</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Вакансии</a></li>
+                      <li class="page-footer__menu-item"><a class="page-footer__menu-link" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="page-footer__subscribe">
+                <form class="page-footer__subscribe-form">
+                  <div class="page-footer__subscribe-title">Узнавай о скидках первым</div>
+                  <div class="page-footer__subscribe-input-and-button">
+                    <input class="page-footer__subscribe-input" type="text" placeholder="Ведите свой e-mail" /><button class="page-footer__subscribe-button button" type="submit">Подписаться</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="page-footer__contacts">
+              <div class="page-footer__column">
+                <div class="page-footer__uptitle">Контакты</div>
+                <div class="page-footer__phones">
+                  <a class="page-footer__phones-link" href="tel:88005000320">8 (800) 500-03-20</a><a class="page-footer__phones-link" href="tel:88612025840">8 (861) 202-58-40</a>
+                </div>
+                <div class="page-footer__social">
+                  <a class="page-footer__social-link page-footer__social-link--whatsapp" href="#" target="_blank">WhatsApp</a
+                  ><a class="page-footer__social-link page-footer__social-link--telegram" href="#" target="_blank">Telegram</a>
+                </div>
+                <div class="page-footer__address">
+                  <div class="page-footer__uptitle page-footer__uptitle--small">Адреса в г. Крансодаре:</div>
+                  <div class="page-footer__address-links">
+                    <a class="page-footer__address-link" href="#">ул. Дорожная, 1Е (Яблоновский)</a><a class="page-footer__address-link" href="#">ул. Сормовская, 2а</a
+                    ><a class="page-footer__address-link" href="#">ул. Красных Партизан, 237</a><a class="page-footer__address-link" href="#">ул. Российская, 131/5</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-footer__download-app-and-cosial">
+              <div class="page-footer__uptitle page-footer__uptitle--small">Скачайте наше приложение</div>
+              <div class="page-footer__download-app">
+                <div class="page-footer__download-app-code"><img class="page-footer__download-app-code-image" src="./images/page-footer-qr-code.png" alt="" role="presentation" /></div>
+                <div class="page-footer__download-app-links">
+                  <a class="page-footer__download-app-link page-footer__download-app-link--app-store" href="#"><span class="visually-hidden">AppStore</span></a
+                  ><a class="page-footer__download-app-link page-footer__download-app-link--google-play" href="#"><span class="visually-hidden">Google Play</span></a>
+                </div>
+              </div>
+              <div class="page-footer__social-icon">
+                <ul class="page-footer__social-icon-list">
+                  <li class="page-footer__social-icon-item">
+                    <a class="page-footer__social-icon-link" href="#" target="_blank"
+                      ><img class="page-footer__social-icon-image" src="./images/page-footer-vk-icon.svg" alt="" role="presentation"
+                    /></a>
+                  </li>
+                  <li class="page-footer__social-icon-item">
+                    <a class="page-footer__social-icon-link" href="#" target="_blank"
+                      ><img class="page-footer__social-icon-image" src="./images/page-footer-yuotube-icon.svg" alt="" role="presentation"
+                    /></a>
+                  </li>
+                  <li class="page-footer__social-icon-item">
+                    <a class="page-footer__social-icon-link" href="#" target="_blank"
+                      ><img class="page-footer__social-icon-image" src="./images/page-footer-tiktok-icon.svg" alt="" role="presentation"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-footer">
+        <div class="mobile-footer__download-app">
+          <div class="mobile-footer__uptitle mobile-footer__uptitle--small">Скачайте наше приложение</div>
+          <div class="mobile-footer__download-app-links">
+            <a class="mobile-footer__download-app-link mobile-footer__download-app-link--app-store" href="#"><span class="visually-hidden">App Store</span></a
+            ><a class="mobile-footer__download-app-link mobile-footer__download-app-link--google-play" href="#"><span class="visually-hidden">Google Play</span></a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="mobile-footer__address-and-timework">
+            <div class="mobile-footer__address">
+              <a class="mobile-footer__address-link" href="#">г. Краснодар, ул. Дорожная, 1Е <br />(Яблоновский) и еще 3</a>
+            </div>
+            <div class="mobile-footer__timework">С 9:00 до 20:00 без выходных</div>
+          </div>
+          <div class="mobile-footer__social">
+            <a class="mobile-footer__social-link mobile-footer__social-link--whatsapp" href="#" target="_blank">Написать в WhatsApp</a
+            ><a class="mobile-footer__social-link mobile-footer__social-link--telegram" href="#" target="_blank">Написать в Telegram</a>
+          </div>
+          <div class="mobile-footer__callback-button"><a class="button" href="tel:88005000320">Позвонить 8 (800) 500-03-20</a></div>
+          <div class="mobile-footer__icon-menu">
+            <div class="mobile-footer__uptitle">Помощь</div>
+            <ul class="mobile-footer__icon-menu-list">
+              <li class="mobile-footer__icon-menu-item">
+                <a class="mobile-footer__icon-menu-link" href="#"
+                  ><span class="mobile-footer__icon-menu-icon"
+                    ><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M10.3883 6H8.17855C8.0165 6 7.88391 6.13696 7.88391 6.30435V8.73913H7.29464C7.13259 8.73913 7 8.87609 7 9.04348C7 9.21087 7.13259 9.34783 7.29464 9.34783H7.88391V10.0752H7.29464C7.13259 10.0752 7 10.2122 7 10.3796C7 10.547 7.13259 10.6839 7.29464 10.6839H7.88391V12.6957C7.88391 12.863 8.0165 13 8.17855 13C8.3406 13 8.47319 12.863 8.47319 12.6957V10.6839H10.2675C10.4296 10.6839 10.5622 10.547 10.5622 10.3796C10.5622 10.2122 10.4296 10.0752 10.2675 10.0752H8.47319V9.34783H10.3883C11.4461 9.34783 12 8.50478 12 7.67391C12 6.84304 11.4461 6 10.3883 6ZM10.3883 8.73913H8.47319V6.6087H10.3883C10.7065 6.6087 10.9717 6.7213 11.1544 6.93435C11.3164 7.12304 11.4107 7.39391 11.4107 7.67391C11.4107 8.20348 11.0925 8.73913 10.3883 8.73913Z"
+                        fill="#F2F2F2"
+                        stroke="#F2F2F2"
+                        stroke-width="0.2"
+                      />
+                      <path
+                        d="M9 1C4.58776 1 1 4.58776 1 9C1 13.4122 4.58776 17 9 17C13.4122 17 17 13.4122 17 9C17 4.58776 13.4122 1 9 1ZM9 16.1837C5.04082 16.1837 1.81633 12.9592 1.81633 9C1.81633 5.04082 5.04082 1.81633 9 1.81633C12.9592 1.81633 16.1837 5.04082 16.1837 9C16.1837 12.9592 12.9592 16.1837 9 16.1837Z"
+                        fill="#F2F2F2"
+                        stroke="#F2F2F2"
+                        stroke-width="0.2"
+                      /></svg></span
+                  ><span class="mobile-footer__icon-menu-text">Оплата</span></a
+                >
+              </li>
+              <li class="mobile-footer__icon-menu-item">
+                <a class="mobile-footer__icon-menu-link" href="#"
+                  ><span class="mobile-footer__icon-menu-icon"
+                    ><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.86138 8.82902H12.8032C14.5563 8.82902 15.9792 7.45377 15.9792 5.76532C15.9792 4.07686 14.5529 2.70161 12.8032 2.70161H5.05541C4.86138 1.55783 3.75165 0.798696 2.60786 1.04721C1.58321 1.26846 0.888772 2.24885 1.01473 3.28713C1.15771 4.45134 2.24022 5.2479 3.384 5.05728C4.24184 4.91089 4.91244 4.24029 5.05883 3.38245H12.8066C14.1818 3.38245 15.3018 4.45134 15.3018 5.76535C15.3018 7.07933 14.1819 8.14824 12.8066 8.14824H4.86138C3.10827 8.14824 1.68192 9.5235 1.68192 11.2119C1.68192 12.9004 3.10824 14.2757 4.85796 14.2757H10.3896L8.93269 15.736C8.79652 15.8654 8.79314 16.0832 8.9259 16.216C9.05866 16.3488 9.27312 16.3556 9.40588 16.2228C9.40929 16.2194 9.41267 16.216 9.41267 16.216L11.4517 14.1769C11.5845 14.0442 11.5845 13.8297 11.4517 13.697L9.41267 11.6545C9.2765 11.5251 9.06204 11.5285 8.93269 11.6613C8.80673 11.7941 8.80673 12.0017 8.93269 12.1345L10.3931 13.5948H4.86138C3.48271 13.5948 2.36277 12.526 2.36277 11.2119C2.36277 9.89794 3.48271 8.82902 4.86138 8.82902ZM3.04358 4.40028C2.29128 4.40028 1.68192 3.79095 1.68192 3.03862C1.68192 2.28632 2.29125 1.67696 3.04358 1.67696C3.79588 1.67696 4.40524 2.28629 4.40524 3.03862C4.40524 3.79092 3.79588 4.40028 3.04358 4.40028Z"
+                        fill="#F2F2F2"
+                        stroke="#F2F2F2"
+                        stroke-width="0.4"
+                      />
+                      <path
+                        d="M14.9576 11.8894C13.8309 11.8894 12.9152 12.8051 12.9152 13.9319C12.9152 15.0586 13.8309 15.9743 14.9576 15.9743C16.0844 15.9743 17.0001 15.0586 17.0001 13.9319C17.0001 12.8051 16.0878 11.8928 14.9576 11.8894ZM14.9576 15.2935C14.2053 15.2935 13.596 14.6842 13.596 13.9319C13.596 13.1795 14.2053 12.5702 14.9576 12.5702C15.71 12.5702 16.3193 13.1795 16.3193 13.9319C16.3193 14.6842 15.71 15.2935 14.9576 15.2935Z"
+                        fill="#F2F2F2"
+                        stroke="#F2F2F2"
+                        stroke-width="0.4"
+                      /></svg></span
+                  ><span class="mobile-footer__icon-menu-text">Услувия доставки</span></a
+                >
+              </li>
+              <li class="mobile-footer__icon-menu-item">
+                <a class="mobile-footer__icon-menu-link" href="#"
+                  ><span class="mobile-footer__icon-menu-icon"
+                    ><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.9304 10.1311C15.3957 10.1311 14.9844 10.5424 14.9844 11.036V15.2724H5.64776V11.036C5.64776 10.5424 5.23646 10.1722 4.74289 10.1722C4.24932 10.1722 3.83801 10.5424 3.83801 11.036V16.1362C3.83801 16.6298 4.24932 16.9999 4.74289 16.9999H15.8893C16.3829 16.9999 16.7942 16.6298 16.7942 16.1362V11.036C16.8353 10.5424 16.424 10.1311 15.9304 10.1311Z"
+                        fill="#F2F2F2"
+                        stroke="black"
+                        stroke-width="0.4"
+                      />
+                      <path
+                        d="M19.3443 8.77371L10.9948 1.24678C10.6246 0.917739 10.0488 0.917739 9.71972 1.24678L1.28792 8.77371C1.12339 8.93823 1 9.18502 1 9.4318C1 9.67858 1.12339 9.92537 1.28792 10.0899C1.45244 10.2544 1.69922 10.3367 1.94601 10.3367C2.19279 10.3367 2.39844 10.2544 2.6041 10.0899L10.3367 3.09767L18.0693 10.0488C18.2338 10.2133 18.4806 10.2955 18.7273 10.2955C18.9741 10.2955 19.1798 10.2133 19.3854 10.0488C19.55 9.88424 19.6734 9.63745 19.6734 9.39067C19.6734 9.18502 19.55 8.93823 19.3443 8.77371Z"
+                        fill="#F2F2F2"
+                        stroke="black"
+                        stroke-width="0.4"
+                      /></svg></span
+                  ><span class="mobile-footer__icon-menu-text">Контакты</span></a
+                >
+              </li>
+              <li class="mobile-footer__icon-menu-item">
+                <a class="mobile-footer__icon-menu-link" href="#"
+                  ><span class="mobile-footer__icon-menu-icon"
+                    ><svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.5995 15.6651C13.4872 15.6655 13.3777 15.6312 13.2865 15.5669L8.99917 12.5148L4.71186 15.5669C4.62027 15.6321 4.50992 15.6671 4.39677 15.6667C4.28362 15.6663 4.17353 15.6305 4.08242 15.5646C3.99131 15.4988 3.9239 15.4061 3.88993 15.3001C3.85597 15.1942 3.85721 15.0803 3.89347 14.9751L5.56559 10.1119L1.23195 7.19367C1.13808 7.13053 1.06723 7.03957 1.02976 6.93408C0.992284 6.82859 0.990148 6.71409 1.02366 6.60732C1.05718 6.50056 1.12458 6.40711 1.21603 6.34063C1.30749 6.27416 1.41819 6.23815 1.53197 6.23785H6.87835L8.4918 1.3622C8.52656 1.25694 8.59437 1.16519 8.68552 1.10012C8.77668 1.03505 8.88647 1 8.99917 1C9.11186 1 9.22166 1.03505 9.31281 1.10012C9.40396 1.16519 9.47178 1.25694 9.50654 1.3622L11.12 6.23949H16.4664C16.5803 6.23944 16.6912 6.2752 16.783 6.34154C16.8747 6.40789 16.9424 6.50133 16.9761 6.60818C17.0098 6.71503 17.0078 6.82968 16.9704 6.93533C16.9329 7.04098 16.862 7.13209 16.7681 7.19531L12.4327 10.1119L14.1039 14.9738C14.1309 15.0525 14.1386 15.1364 14.1261 15.2186C14.1136 15.3007 14.0814 15.3788 14.0321 15.4464C13.9829 15.5139 13.9179 15.569 13.8427 15.607C13.7675 15.645 13.6841 15.6649 13.5995 15.6651Z"
+                        stroke="#F2F2F2"
+                      /></svg></span
+                  ><span class="mobile-footer__icon-menu-text">Оставить отзыв</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-footer__menu">
+          <div class="container">
+            <ul class="mobile-footer__menu-list">
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">Ремонт и обслуживание</a></li>
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">Прокат оборудования</a></li>
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">О нас</a></li>
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">Вакансии</a></li>
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">Пользовательское соглашение</a></li>
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">Бонусная программа</a></li>
+              <li class="mobile-footer__menu-item"><a class="mobile-footer__menu-link" href="#">Арендодателям</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-footer__subscribe">
+          <div class="container">
+            <div class="mobile-footer__subscribe-title">Подпишитесьна наши новости</div>
+            <form class="mobile-footer__subscribe-form">
+              <input class="mobile-footer__subscribe-input" type="text" placeholder="Введите свой e-mail" /><button class="mobile-footer__subscribe-button button" type="submit">
+                <span class="visually-hidden">Подписаться</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <div class="container">
+          <div class="page-footer__copyright-inner">
+            <div class="page-footer__copyright-date">© 2022</div>
+            <div class="page-footer__copyright-text">Сеть магазинов "Байк Центр" ® — bike-сentre.ru</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="to-top" id="to-top" href="#"><span class="visually-hidden">Наверх</span></a>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
